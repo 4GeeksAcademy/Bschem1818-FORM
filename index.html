@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container border rounded mt-5">
+        <div class="bg-light  border-bottom row">
+            <div class="col">
+                <h1>Payment Form Example</h1>
+            </div>
+        </div>
+        <div class="alert alert-danger mt-3" role="alert">
+            Some fields are missing
+          </div>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-5">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="number" class="form-control" id="cardNumber" placeholder="xxxxxxxx">
+            </div>
+            <div class="col-md-3">
+                <label for="cVc" class="form-label">CVC #</label>
+                <input type="number" class="form-control" id="cVc" placeholder="00000">
+            </div>
+            <div class="col-md-4">
+                <label for="amount" class="form-label">Amount</label>
+                <div class="input-group">
+                    <span class="pe-2">$</span>
+                    <input type="text" class="form-control" id="amount" aria-label="Amount (to the nearest dollar)" placeholder="Amount">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+            </div>
+            <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city">
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Pick a State</option>
+                    <option>Ohio</option>
+                    <option>Texas</option>
+                    <option>Dallas</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+            <div class="col-md-3">
+                <label for="postalCode" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="postalCode">
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mt-3">
+                    <div class="col-md-12">
+                        <label for="weAccept" class="form-label">We accept:</label>
+                    </div>
+                    <div class="col-md-5 bg-secondary rounded">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <i class="icon-white fab fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                <i class="icon-white fab fa-cc-visa"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                <i class="icon-white fab fa-cc-diners-club"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                <i class="icon-white fab fa-cc-amex"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5"></textarea>
+                  <h6 class="text-secondary">Add any notes here</h6>
+                </div>
+                <div class="bg-light border-top col-md-12 text-end mt-3 p-3 ">
+                  <button type="button" class="btn btn-secondary">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </div>
+            </div>  
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
